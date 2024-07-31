@@ -10,7 +10,7 @@ function App() {
 
 	const onInputButtonClick = () => {
 		const promptValue = prompt('Введите значение');
-		if (promptValue.length >= 3) {
+		if (promptValue && promptValue.length >= 3) {
 			setValue(`${promptValue}`);
 			setError('');
 			setIsValueValid(true);
