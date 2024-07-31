@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './index.css';
 import styles from './app.module.css';
 import { useState } from 'react';
