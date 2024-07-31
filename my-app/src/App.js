@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 function App() {
 	const [value, setValue] = useState('');
-	const [list, setList] = useState('');
+	const [list, setList] = useState([]);
 	const [error, setError] = useState('');
 	const [isValueValid, setIsValueValid] = useState(false);
 
@@ -61,7 +61,7 @@ function App() {
 			</div>
 			<div className={styles['list-container']}>
 				<h2 className={styles['list-heading']}>Список:</h2>
-				{list ? (
+				{(list.length>=1) ? (
 					addListItem(list)
 				) : (
 					<p className={styles['no-margin-text']}>Нет добавленных элементов</p>
